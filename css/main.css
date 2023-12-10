@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+}
+
+section {
+    flex: 2;
+    max-width: calc(100% - 250px);
+    margin-right: 250px;
+    box-sizing: border-box;
+}
+
+header, footer {
+    text-align: center;
+    background: linear-gradient(to right, #ff9933, #ffffff, #138808); 
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+}
+
+/* Aside CSS */ 
+aside {
+    margin-left: auto;
+    width: 250px;
+    background: url(/images/pngtree-color-bhagat-singh-birthday-png-image_6461730.jpg);
+    position: relative;
+    top: auto;
+    bottom: 0;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.quick-links {
+    font-family: 'Courier New', Courier, monospace;
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+}
+
+.quick-links a {
+    font-family: Arial Black, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000; 
+    transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+    font-size: 1.1em;
+    color: #ff0000;
+    text-decoration: underline; 
+}
+
+nav {
+    background: black;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+    transition: color 0.3s ease, font-size 0.3s ease;
+    flex: 100% 1 1;
+}
+
+nav a:hover {
+    font-size: 17px;
+    color: #ff0000; 
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: black;
+    padding: 10px;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+.biography-image {
+    width: auto;
+    height: auto;
+    float: left;
+    shape-outside: circle(50%);
+    margin-right: 40px;
+}
+
+.biography-text {
+    max-width: auto;
+    margin: 0 auto;
+    margin: 10px 0; 
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background: yellowgreen;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(228, 137, 34);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #000000;
+    color: #fff;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Video Section */
+#video-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+}
+
+.container{
+    width: 500px;
+    height: 281px;
+}
+
+footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, bold;
+    background: linear-gradient(to right, #ff9933, #ffffff, #138808);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+.work-item {
+    margin-bottom: 20px;
+}
+
+.work-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.work-item h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    margin: 10px 0;
+}
+
+.work-item p {
+    margin: 10px;
+}
